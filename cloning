@@ -7,3 +7,4 @@ change the directory to where you saved the project
 run 'npm install' command in order to create node_modules
 
 then run ionic serve
+

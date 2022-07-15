@@ -2,7 +2,7 @@ Clone the repository
 
 open your terminal
 
-change the directory to where you saved the project
+cd to the project
 
 run 'npm install' command in order to create node_modules
 

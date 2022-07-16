@@ -11,7 +11,7 @@ Abstract:
 
 This project will consists of lessons and quizzes after them. Once a user answered a question and it was correct, they will received a crypto token to their XRP ledger address.
 
-Instructions to run the Project:
+**Instructions to run the Project:**
 
 1. Clone the repository
 2. open your terminal

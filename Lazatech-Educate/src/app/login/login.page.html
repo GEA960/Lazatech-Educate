@@ -1,9 +1,22 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-header></ion-header>
 
 <ion-content>
-  <ion-button (click)="login()"> Login </ion-button>
+  <ion-card>
+    <ion-card-header>
+      <h1>pwedeng picture ng lazatech ito</h1>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item class="inputs">
+        <ion-input placeholder="Email" type="email"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item class="inputs">
+        <ion-input placeholder="Password" type="password"></ion-input>
+      </ion-item>
+      <br>
+      <ion-button expand="block" (click)="login()">Login</ion-button>
+      <ion-button expand="block" (click)="register()">Register</ion-button>      
+    </ion-card-content>
+  </ion-card>
 </ion-content>

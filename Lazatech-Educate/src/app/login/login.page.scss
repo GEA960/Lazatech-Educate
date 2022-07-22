@@ -1,6 +1,14 @@
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+ion-button{
+    margin: 15px;
+    text-transform: inherit;
+}
+
 ion-card{
-    height: auto;
-    width: auto;
-    margin: 100px;
-    text-align: center;
+    width: 100%;
 }

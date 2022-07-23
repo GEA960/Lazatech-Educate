@@ -20,8 +20,24 @@ const routes: Routes = [
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'sidenav',
+    path: 'nav',
     loadChildren: () => import('./pages/sidenav/sidenav.module').then( m => m.SidenavPageModule)
+  },
+  {
+    path: 'lazatech-courses',
+    loadChildren: () => import('./pages/lazatech-courses/lazatech-courses.module').then( m => m.LazatechCoursesPageModule)
+  },
+  {
+    path: 'enrolled-courses',
+    loadChildren: () => import('./pages/enrolled-courses/enrolled-courses.module').then( m => m.EnrolledCoursesPageModule)
+  },
+  {
+    path: 'my-token-balance',
+    loadChildren: () => import('./pages/my-token-balance/my-token-balance.module').then( m => m.MyTokenBalancePageModule)
+  },
+  {
+    path: 'my-payouts',
+    loadChildren: () => import('./pages/my-payouts/my-payouts.module').then( m => m.MyPayoutsPageModule)
   },
 ];
 

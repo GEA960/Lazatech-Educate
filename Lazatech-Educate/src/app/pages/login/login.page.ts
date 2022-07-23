@@ -20,7 +20,7 @@ export class LoginPage implements OnInit {
   }
 
   login(){
-    this.router.navigate(['sidenav']); 
+    this.router.navigate(['nav']); 
   }
 
   register(){

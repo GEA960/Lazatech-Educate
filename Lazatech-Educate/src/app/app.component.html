@@ -1,4 +1,46 @@
-<ion-app>
-    <ion-menu contentId="main"></ion-menu>
-    <ion-router-outlet id="main"></ion-router-outlet>
-</ion-app>
+<ion-menu menuId="main-menu" content-id="main">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Lazatech Educate</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+            <ion-menu-toggle>
+                <ion-item routerDirection="root" routerLink="home" routerLinkActive="selected">
+                    <ion-icon name="home-outline" slot="start"></ion-icon>
+                    <ion-label>Home</ion-label>
+                </ion-item>
+            </ion-menu-toggle>
+  
+            <ion-menu-toggle>
+                <ion-item routerLink="lazatech-courses">
+                    <ion-icon name="school-outline" slot="start"></ion-icon>
+                    <ion-label>Lazatech Courses</ion-label>
+                </ion-item>
+            </ion-menu-toggle>
+  
+            <ion-menu-toggle>
+                <ion-item routerLink="enrolled-courses">
+                    <ion-icon name="book-outline" slot="start"></ion-icon>
+                    <ion-label>Enrolled Courses</ion-label>
+                </ion-item>
+            </ion-menu-toggle>
+  
+            <ion-menu-toggle>
+                <ion-item routerLink="my-token-balance">
+                    <ion-icon name="wallet-outline" slot="start"></ion-icon>
+                    <ion-label>My Token Balance</ion-label>
+                </ion-item>
+            </ion-menu-toggle>
+  
+            <ion-menu-toggle>
+                <ion-item routerLink="my-payouts">
+                    <ion-icon name="cash-outline" slot="start"></ion-icon>
+                    <ion-label>My Payouts</ion-label>
+                </ion-item>
+            </ion-menu-toggle>
+        </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>

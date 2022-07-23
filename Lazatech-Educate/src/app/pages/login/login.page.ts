@@ -20,10 +20,10 @@ export class LoginPage implements OnInit {
   }
 
   login(){
-    this.router.navigate(['nav']); 
+    this.router.navigate(['./home']); 
   }
 
   register(){
-    this.router.navigate(['register']);
+    this.router.navigate(['./register']);
   }
 }

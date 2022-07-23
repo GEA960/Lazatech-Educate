@@ -20,10 +20,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'nav',
-    loadChildren: () => import('./pages/sidenav/sidenav.module').then( m => m.SidenavPageModule)
-  },
-  {
     path: 'lazatech-courses',
     loadChildren: () => import('./pages/lazatech-courses/lazatech-courses.module').then( m => m.LazatechCoursesPageModule)
   },

@@ -1,0 +1,23 @@
+<ion-content>
+  <div class="flex-center">
+    <form [formGroup]="form">
+    <ion-card>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" formControlName="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password" formControlName="password"></ion-input>
+        </ion-item>
+
+        <ion-button size="full" color="success" [disabled]="!form.valid" (click)="login()"><ion-icon name="log-in-outline"></ion-icon> Login</ion-button>
+        <ion-button size="full" fill="clear" color="success" (click)="register()">Register</ion-button>
+
+      </ion-card-content>
+    </ion-card>
+    </form>
+  </div>
+</ion-content>

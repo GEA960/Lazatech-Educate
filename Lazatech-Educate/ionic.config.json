@@ -1,0 +1,7 @@
+{
+  "name": "Lazatech-Educate",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -12,7 +12,7 @@ import { ErrMessageComponent } from 'src/app/components/err-message/err-message.
     FormsModule,
     IonicModule,
     LoginPageRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   declarations: [LoginPage, ErrMessageComponent]
 })

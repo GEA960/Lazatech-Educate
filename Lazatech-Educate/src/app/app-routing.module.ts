@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
+  {
+    path: 'sidenav',
+    loadChildren: () => import('./pages/sidenav/sidenav.module').then( m => m.SidenavPageModule)
+  },
 ];
 
 @NgModule({

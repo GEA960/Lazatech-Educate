@@ -1,9 +1,35 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>register</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <div class="flex-center">
+    <form [formGroup]="form">
+    <ion-card>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" formControlName="email"></ion-input>
+        </ion-item>
 
+        <app-err-message [field]="form.get('email')" message="Email is Required" error="required"></app-err-message>
+        <app-err-message [field]="form.get('email')" message="Email is Invalid" error="email"></app-err-message>
+
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password" formControlName="password"></ion-input>
+        </ion-item>
+
+        <app-err-message [field]="form.get('password')" message="Password is Required" error="required"></app-err-message>
+
+        <!-- This is still not checking if the passwords match -->
+        <ion-item>
+          <ion-label position="floating">Confirm Password</ion-label>
+          <ion-input type="cPassword" formControlName="cPassword"></ion-input>
+        </ion-item>
+
+        <app-err-message [field]="form.get('password')" message="Password is Required" error="required"></app-err-message>
+
+        <ion-button size="full" color="success" [disabled]="!form.valid" (click)="login()"><ion-icon name="log-in-outline"></ion-icon> Login</ion-button>
+
+      </ion-card-content>
+    </ion-card>
+    </form>
+  </div>
 </ion-content>

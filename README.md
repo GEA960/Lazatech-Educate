@@ -17,4 +17,4 @@ This project will consists of lessons and quizzes after them. Once a user answer
 2. open your terminal
 3. cd to the project
 4. run 'npm install' command in order to create node_modules
-5. then run ionic serve to see if it is working
+5. then run ionic serve to see if it is working on your browser

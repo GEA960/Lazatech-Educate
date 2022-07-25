@@ -18,6 +18,6 @@ Note that your device should have node.js and angular installed globally. If you
 2. open your terminal
 3. cd to the project
 4. run 'npm install' command in order to create node_modules
-5. run "npm install --save firebase @angular/fire"
-6. run "ng add @angular/fire"
+5. run "npm install firebase"
+6. run "npm install @angular/fire"
 7. then run ionic serve to see if it is working on your browser

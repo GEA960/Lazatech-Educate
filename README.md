@@ -12,9 +12,12 @@ Abstract:
 This project will consists of lessons and quizzes after them. Once a user answered a question and it was correct, they will received a crypto token to their XRP ledger address.
 
 **Instructions to run the Project:**
+Note that your device should have node.js and angular installed globally. If you do have installed them, move on with the instruction below:
 
 1. Clone the repository
 2. open your terminal
 3. cd to the project
 4. run 'npm install' command in order to create node_modules
-5. then run ionic serve to see if it is working on your browser
+5. run "npm install --save firebase @angular/fire"
+6. run "ng add @angular/fire"
+7. then run ionic serve to see if it is working on your browser

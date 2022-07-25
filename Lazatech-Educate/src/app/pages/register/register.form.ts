@@ -11,9 +11,9 @@ export class RegisterPageForm{
 
     createForm(): FormGroup{
         return this.formBuilder.group({
+            name: ['', [Validators.required]],
             email: ['', [Validators.required, Validators.email]],
-            password: ['', [Validators.required]],
-            cPassword: ['', [Validators.required]]
+            password: ['', [Validators.required]]
         });
     }
 

@@ -21,3 +21,4 @@ Note that your device should have node.js and angular installed globally. If you
 5. run "npm install firebase"
 6. run "npm install @angular/fire"
 7. then run ionic serve to see if it is working on your browser
+8. After you register for a new account you should check your email for verification

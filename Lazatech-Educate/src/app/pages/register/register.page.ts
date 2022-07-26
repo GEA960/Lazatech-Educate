@@ -19,6 +19,7 @@ export class RegisterPage implements OnInit {
   name: string;
   email: string;
   password: string;
+  token: number = 1;
 
   constructor
   (
@@ -50,7 +51,8 @@ export class RegisterPage implements OnInit {
         this.afs.collection('user').doc(data.user.uid).set({
           'userId': data.user.uid,
           'userName': this.name,
-          'userEmail': this.email
+          'userEmail': this.email,
+          'userToken': this.token
         })
         .then(()=>{
           loading.dismiss();

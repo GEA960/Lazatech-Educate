@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-my-token-balance',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyTokenBalancePage implements OnInit {
 
-  constructor() { }
+  user: any;
+
+  constructor(private auth: AuthService) { }
 
   ngOnInit() {
+    this.auth.user$.subscribe(user => {
+      this.user = user;
+    })
   }
 
 }

@@ -9,6 +9,11 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-label> Token balance ito</ion-label>
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-content>
+      <h1>{{user?.userName}}</h1>
+      <p>Balance: {{user?.userToken}}.00 </p>
+   </ion-card-content>
+  </ion-card>
 </ion-content>

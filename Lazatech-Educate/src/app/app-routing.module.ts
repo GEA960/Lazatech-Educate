@@ -32,17 +32,17 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
-    path: 'my-payouts',
-    loadChildren: () => import('./pages/my-payouts/my-payouts.module').then( m => m.MyPayoutsPageModule),
-    canActivate: [AuthGuard]
-  },
-  {
     path: 'forgot-password',
     loadChildren: () => import('./pages/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
   },
   {
     path: 'quiz',
     loadChildren: () => import('./pages/quiz/quiz.module').then( m => m.QuizPageModule),
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'store',
+    loadChildren: () => import('./pages/store/store.module').then( m => m.StorePageModule),
     canActivate: [AuthGuard]
   }
 ];

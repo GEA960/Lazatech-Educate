@@ -10,7 +10,7 @@ export class MyTokenBalancePage implements OnInit {
 
   user: any;
 
-  constructor(private auth: AuthService) { }
+  constructor(private auth: AuthService,) { }
 
   ngOnInit() {
     this.auth.user$.subscribe(user => {

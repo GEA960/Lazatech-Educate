@@ -40,6 +40,10 @@ const routes: Routes = [
     path: 'my-payouts',
     loadChildren: () => import('./pages/my-payouts/my-payouts.module').then( m => m.MyPayoutsPageModule),
     canActivate: [AuthGuard]
+  },
+  {
+    path: 'forgot-password',
+    loadChildren: () => import('./pages/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
   }
 ];
 

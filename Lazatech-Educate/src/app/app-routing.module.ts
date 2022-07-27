@@ -27,11 +27,6 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
-    path: 'enrolled-courses',
-    loadChildren: () => import('./pages/enrolled-courses/enrolled-courses.module').then( m => m.EnrolledCoursesPageModule),
-    canActivate: [AuthGuard]
-  },
-  {
     path: 'my-token-balance',
     loadChildren: () => import('./pages/my-token-balance/my-token-balance.module').then( m => m.MyTokenBalancePageModule),
     canActivate: [AuthGuard]
@@ -44,6 +39,11 @@ const routes: Routes = [
   {
     path: 'forgot-password',
     loadChildren: () => import('./pages/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
+  },
+  {
+    path: 'quiz',
+    loadChildren: () => import('./pages/quiz/quiz.module').then( m => m.QuizPageModule),
+    canActivate: [AuthGuard]
   }
 ];
 

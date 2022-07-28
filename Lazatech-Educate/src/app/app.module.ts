@@ -14,10 +14,9 @@ import { AngularFireStorageModule} from '@angular/fire/compat/storage';
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from './guards/auth.guard';
 
-
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularFireModule.initializeApp(environment.firebase), AngularFirestoreModule, AngularFireStorageModule, AngularFireAuthModule ],
+  imports: [BrowserModule,IonicModule.forRoot(), AppRoutingModule, AngularFireModule.initializeApp(environment.firebase), AngularFirestoreModule, AngularFireStorageModule, AngularFireAuthModule ],
   providers: [AuthService, AuthGuard, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

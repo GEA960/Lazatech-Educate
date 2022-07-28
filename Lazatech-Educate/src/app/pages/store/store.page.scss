@@ -1,0 +1,11 @@
+@media (max-width: 800px) {
+    .flex-center {
+      flex-direction: column;
+    }
+  }
+
+ion-card:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.5s;
+}

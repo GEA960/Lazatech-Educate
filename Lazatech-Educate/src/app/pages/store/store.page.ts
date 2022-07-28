@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StorePage implements OnInit {
 
+  id: any;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  test(){
+    console.log('hello')
   }
 
 }

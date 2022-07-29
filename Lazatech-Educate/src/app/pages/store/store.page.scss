@@ -3,9 +3,20 @@
       flex-direction: column;
     }
   }
-
+.flex-center{
+  height: auto;
+}
 ion-card:hover{
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(0.75);
   transition: 0.5s;
+  box-shadow: 10px 10px 5px lightblue;
 }
+
+.img-wrapper {
+  min-height: 350px;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+

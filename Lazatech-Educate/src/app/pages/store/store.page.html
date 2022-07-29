@@ -10,66 +10,17 @@
 </ion-header>
 
 <ion-content>
+  
   <div class="flex-center">
-    <ion-card (click)="test()" *ngFor="let image of links">
-      <img [src]="image" alt="Lazatech Merch">
-    </ion-card>
-  
-    <!-- <ion-card>
-      <img src="../../../assets/Lazatech-Merch/3.png" alt="Lazatech Shirt">
-    </ion-card>
-  
-    <ion-card>
-      <img src="../../../assets/Lazatech-Merch/5.png" alt="Lazatech Shirt">
-    </ion-card>
-  
-    <ion-card>
-      <img src="../../../assets/Lazatech-Merch/7.png" alt="Lazatech Shirt">
-    </ion-card> -->
+    <ion-grid>
+      <ion-row>
+        <ion-col sizeLg="4" sizeMd="6" sizeXs="12" *ngFor="let image of merchs">
+          <ion-card (click)="test()">
+            <img [src]="image" alt="Lazatech Merch">
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 
-
-  <!-- <ion-grid>
-    <ion-row class="ion-justify-content-center">
-      <ion-col sizeLg="3" sizeMd="4" sizeXs="6">
-        <div>
-          <ion-card>
-            <img src="../../../assets/Lazatech-Merch/1.png" alt="Lazatech Mug">
-          </ion-card>
-        </div>
-      </ion-col>
-      <ion-col sizeLg="3" sizeMd="4" sizeXs="6">
-        <div>
-          <ion-card>
-            <img src="../../../assets/Lazatech-Merch/3.png" alt="Lazatech Shirt">
-          </ion-card>
-        </div>
-      </ion-col>
-      <ion-col sizeLg="3" sizeMd="4" sizeXs="6">
-        <div>
-          <ion-card>
-            <img src="../../../assets/Lazatech-Merch/5.png" alt="Lazatech Tumbler">
-          </ion-card>
-        </div>
-      </ion-col>
-      <ion-col sizeLg="3" sizeMd="4" sizeXs="6">
-        <div>
-          <ion-card>
-            <img src="../../../assets/Lazatech-Merch/7.png" alt="Lazatech Tote Bag">
-          </ion-card>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid> -->
-
-<!-- <div class="flex-center">
-  <ion-grid>
-    <ion-row>
-      <ion-col sizeLg="4" sizeMd="4" sizeXs="8" *ngFor="let image of [1,2,3,4,5,6,7,8]">
-        <ion-card><div class="img-wrapper" [style.background-image]="'url(../../../assets/Lazatech-Merch/' + image + '.png)'">
-        </div></ion-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-</div> -->
 </ion-content>

@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class StorePage implements OnInit {
 
-  links: any[] = [
+  merchs: any[] = [
     '../../../assets/Lazatech-Merch/1.png',
     '../../../assets/Lazatech-Merch/2.png',
     '../../../assets/Lazatech-Merch/3.png',

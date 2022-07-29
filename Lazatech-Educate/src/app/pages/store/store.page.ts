@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-store',
@@ -9,13 +10,13 @@ export class StorePage implements OnInit {
 
   id: any;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
   test(){
-    console.log('hello')
+    console.log('test')
   }
 
 }

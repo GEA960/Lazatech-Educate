@@ -67,4 +67,8 @@ export class ForgotPasswordPage implements OnInit {
     toast.present();
   }
 
+  back(){
+    this.router.navigate(['/home'])
+  }
+
 }

@@ -1,9 +1,15 @@
 <ion-header class="pages-header">
   <ion-toolbar>
-    <ion-title>Store</ion-title>
-
     <ion-buttons slot="start">
       <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title *ngIf="!open">Store</ion-title>
+
+    <ion-searchbar *ngIf="open" showCancelButton="true"  (ionCancel)="open = false" class="search"></ion-searchbar>
+
+    <ion-buttons (click)="open = true" slot="end">
+      <ion-button fill="clear" slot="end" size="large"><ion-icon name="search"></ion-icon></ion-button>
     </ion-buttons>
 
   </ion-toolbar>

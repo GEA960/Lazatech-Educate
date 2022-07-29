@@ -20,6 +20,7 @@ export class StorePage implements OnInit {
   ]
 
   id: any;
+  public open: boolean = false;
 
   constructor(private router: Router) { }
 

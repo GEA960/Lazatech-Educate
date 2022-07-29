@@ -26,7 +26,7 @@
         <app-err-message [field]="form.get('password')" message="Password is Required" error="required"></app-err-message>
 
         <ion-button type="submit" size="full" color="success" [disabled]="!form.valid" (click)="register()"><ion-icon name="log-in-outline"></ion-icon> Register</ion-button>
-
+        <ion-button class="inherit" size="full" color="success"  fill="clear" (click)="back()"><ion-icon name="log-in-outline"></ion-icon> Back to Login</ion-button>
       </ion-card-content>
     </ion-card>
     </form>

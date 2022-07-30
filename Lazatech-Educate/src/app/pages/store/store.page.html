@@ -20,8 +20,8 @@
   <div class="flex-center">
     <ion-grid>
       <ion-row>
-        <ion-col sizeLg="4" sizeMd="6" sizeXs="12" *ngFor="let image of merchs">
-          <ion-card (click)="test()">
+        <ion-col sizeLg="4" sizeMd="6" sizeXs="12" *ngFor="let image of merchs; let i = index" [attr.data-index] = "i">
+          <ion-card (click)="details(i)">
             <img [src]="image" alt="Lazatech Merch">
           </ion-card>
         </ion-col>

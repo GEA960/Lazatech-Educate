@@ -10,17 +10,20 @@ import { IonItem } from '@ionic/angular';
 export class QuizPage implements OnInit {
 
   question: any;
-  answers: any;
-  questionAnswer: any;
+  qAnswer: any;
 
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
     fetch('./assets/data/questions.json').then(res => res.json())
     .then(json => {
-      console.log(json);
-      return this.question = json['questions'];
+      return this.question = json['C1L1questions'];
     });
+
+  }
+
+  answer(){
+    console.log('Selected Value:', this.qAnswer)
   }
 
 }

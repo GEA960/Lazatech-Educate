@@ -12,18 +12,23 @@
 <ion-content>
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Lesson 1: An introduction to Treasury XRPL Quiz</ion-card-title>
+      <ion-card-title>Course 1: Getting to know LAZATECH EDUCATE AND ITS SOCIAL MEDIA COUNTERPART</ion-card-title>
+      <ion-card-subtitle>Lesson 1: An introduction to Treasury XRPL Quiz</ion-card-subtitle>
     </ion-card-header>
   </ion-card>
 
-  <ion-card *ngFor="let item of question">
-    <ion-card-header>
-      <ion-card-title>Question: {{item.questionText}}</ion-card-title>
+  <ion-card>
+    <!-- <ion-card-header>
+      <ion-card-title>Question {{i+1}}: {{item.questionText}}</ion-card-title>
     </ion-card-header>
-  
+   -->
     <ion-card-content>
       <ion-list>
-        <ion-radio-group>
+        <ion-radio-group *ngFor="let item of question; let i = index;">
+          <ion-list-header>
+            <ion-label>Question {{i+1}}: {{item.questionText}}</ion-label>
+          </ion-list-header>
+
           <ion-item>
             <ion-label>{{item.option1}}</ion-label>
             <ion-radio slot="start" [value]="item.option1"></ion-radio>
@@ -44,7 +49,10 @@
             <ion-radio slot="start" [value]="item.option3"></ion-radio>
           </ion-item>
         </ion-radio-group>
+        <ion-button expand="block" (click)="answer()" color="success"> confirm </ion-button>
       </ion-list>
     </ion-card-content>
   </ion-card>
+
+  
 </ion-content>

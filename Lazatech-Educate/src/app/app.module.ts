@@ -14,9 +14,11 @@ import { AngularFireStorageModule} from '@angular/fire/compat/storage';
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from './guards/auth.guard';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule,IonicModule.forRoot(), AppRoutingModule, AngularFireModule.initializeApp(environment.firebase), AngularFirestoreModule, AngularFireStorageModule, AngularFireAuthModule ],
+  imports: [BrowserModule,IonicModule.forRoot(), AppRoutingModule, AngularFireModule.initializeApp(environment.firebase), AngularFirestoreModule, AngularFireStorageModule, AngularFireAuthModule, HttpClientModule ],
   providers: [AuthService, AuthGuard, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

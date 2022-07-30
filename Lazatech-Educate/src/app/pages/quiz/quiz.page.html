@@ -10,5 +10,41 @@
 </ion-header>
 
 <ion-content>
-  <ion-label> Quizzes ito</ion-label>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Lesson 1: An introduction to Treasury XRPL Quiz</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card *ngFor="let item of question">
+    <ion-card-header>
+      <ion-card-title>Question: {{item.questionText}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-list>
+        <ion-radio-group>
+          <ion-item>
+            <ion-label>{{item.option1}}</ion-label>
+            <ion-radio slot="start" [value]="item.option1"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>{{item.answer}}</ion-label>
+            <ion-radio slot="start" [value]="item.answer"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>{{item.option2}}</ion-label>
+            <ion-radio slot="start" [value]="item.option2"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>{{item.option3}}</ion-label>
+            <ion-radio slot="start" [value]="item.option3"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

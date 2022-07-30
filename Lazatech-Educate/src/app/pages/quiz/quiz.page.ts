@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { IonItem } from '@ionic/angular';
 
 @Component({
   selector: 'app-quiz',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuizPage implements OnInit {
 
-  constructor() { }
+  question: any;
+  answers: any;
+  questionAnswer: any;
+
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
+    fetch('./assets/data/questions.json').then(res => res.json())
+    .then(json => {
+      console.log(json);
+      return this.question = json['questions'];
+    });
   }
 
 }

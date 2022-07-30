@@ -1,0 +1,26 @@
+{
+    "questions": [
+        {
+            "questionText": "What is the purpose of $LZT?",
+            "option1": "Utility",
+            "answer": "A store of value",
+            "option2": "Gambling",
+            "option3": "Meme coin"
+        },
+        {
+            "questionText": "What is the purpose of $LAZA?",
+            "answer": "Utility",
+            "option1": "A store of value",
+            "option3": "Gambling",
+            "option2": "Meme coin"
+        },
+        {
+            "questionText": "What is the planned total circulation of $LZT?",
+            "option1": "1000",
+            "answer": "100 Million",
+            "option2": "Every holder is issued 1 token",
+            "option3": "Every holder is issued with 5 tokens"
+            
+        }
+    ]
+}

@@ -47,5 +47,39 @@
             "option3": "All of the above"
             
         }
+    ],
+
+    "C1L3questions": [
+        {
+            "questionText": "What does LAZA means?",
+            "option1": "Help",
+            "option2": "Cryptocurrency",
+            "option3": "Money",
+            "answer": "God has helped"
+        },
+        {
+            "questionText": "Does Lazatech Soc Med gives token to its users?",
+            "answer": "Yes",
+            "option2": "No",
+            "option3": "Sometimes",
+            "option1": "Yes but you need to pay"
+        }
+    ],
+
+    "C1L5questions": [
+        {
+            "questionText": "Does Lazatech Educate give you knowledge of the social media counterpart of it?",
+            "option1": "Not at all",
+            "option2": "A little",
+            "option3": "Yes but not enough",
+            "answer": "Yes"
+        },
+        {
+            "questionText": "Does Lazatech Educate ensure that its its are knowledgeable before entering its social media counterpart and the XRPL ledger blockchain?",
+            "answer": "Yes",
+            "option2": "Yes but not enough",
+            "option3": "Not at all",
+            "option1": "A little"
+        }
     ]
 }

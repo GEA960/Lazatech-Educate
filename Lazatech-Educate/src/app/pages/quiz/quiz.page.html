@@ -48,8 +48,9 @@
             <ion-label>{{item.option3}}</ion-label>
             <ion-radio slot="start" [value]="item.option3"></ion-radio>
           </ion-item>
+
+          <ion-button expand="block" (click)="answer()" color="success"> confirm </ion-button>
         </ion-radio-group>
-        <ion-button expand="block" (click)="answer()" color="success"> confirm </ion-button>
       </ion-list>
     </ion-card-content>
   </ion-card>

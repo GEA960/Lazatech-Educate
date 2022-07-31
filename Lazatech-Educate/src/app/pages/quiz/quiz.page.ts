@@ -12,7 +12,6 @@ export class QuizPage implements OnInit {
   qstn: any;
   questions: any;
   qAnswer: any;
-  public index: number = 0;
   show: boolean;
 
   userId: string;
@@ -20,6 +19,8 @@ export class QuizPage implements OnInit {
   name: string;
   email: string;
   token: number;
+
+  index: number = 0;
 
   constructor(private afs: AngularFirestore, private auth: AuthService) { }
 
@@ -38,26 +39,21 @@ export class QuizPage implements OnInit {
     });
   }
 
-  take(){
-    this.show = true;
-    this.answer()
-  }
-
   answer(){
-    this.questions = this.qstn[this.index];
+    this.show = true;
+    
     if (this.qAnswer == null){
       console.log('No answer')
-      console.log(this.index)
     }
-    else if(this.qAnswer == this.questions.answer){
-      console.log('Correct');
-      console.log(this.index)
-      this.index++;
+    else if(this.qAnswer == this.qstn[this.index].answer){
+      console.log('user answer: ', this.qAnswer);
+      console.log('correct answer: ', this.qstn[this.index].answer)
+      return this.index += 1;
     }
-    else if(this.qAnswer != this.questions.answer){
-      console.log('Wrong');
-      console.log(this.index);
-      this.index++;
+    else if(this.qAnswer != this.qstn[this.index].answer){
+      console.log('user answer: ', this.qAnswer);
+      console.log('correct answer: ', this.qstn[this.index].answer)
+      return this.index += 1;
     }
   }
 

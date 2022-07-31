@@ -27,31 +27,31 @@
    -->
     <ion-card-content>
       <!-- *ngFor="let item of qstn; let i = index;" -->
-      <ion-button *ngIf="!show" (click)="take()" color="success">Take Quiz</ion-button>
+      <ion-button *ngIf="!show" (click)="answer()" color="success">Take Quiz</ion-button>
       <ion-list *ngIf="show">
           <ion-radio-group [(ngModel)]="qAnswer" >
             <ion-list-header>
-              <ion-label>Question: {{questions.questionText}}</ion-label>
+              <ion-label>Question: {{index + 1}} {{qstn[index].questionText}}</ion-label>
             </ion-list-header>
 
             <ion-item>
-              <ion-label>{{questions.option1}}</ion-label>
-              <ion-radio slot="start" [value]="questions.option1"></ion-radio>
+              <ion-label>{{qstn[index].option1}}</ion-label>
+              <ion-radio slot="start" [value]="qstn[index].option1"></ion-radio>
             </ion-item>
         
             <ion-item>
-              <ion-label>{{questions.answer}}</ion-label>
-              <ion-radio slot="start" [value]="questions.answer"></ion-radio>
+              <ion-label>{{qstn[index].option2}}</ion-label>
+              <ion-radio slot="start" [value]="qstn[index].option2"></ion-radio>
             </ion-item>
         
             <ion-item>
-              <ion-label>{{questions.option2}}</ion-label>
-              <ion-radio slot="start" [value]="questions.option2"></ion-radio>
+              <ion-label>{{qstn[index].option3}}</ion-label>
+              <ion-radio slot="start" [value]="qstn[index].option3"></ion-radio>
             </ion-item>
 
             <ion-item>
-              <ion-label>{{questions.option3}}</ion-label>
-              <ion-radio slot="start" [value]="questions.option3"></ion-radio>
+              <ion-label>{{qstn[index].option4}}</ion-label>
+              <ion-radio slot="start" [value]="qstn[index].option4"></ion-radio>
             </ion-item>
 
             <ion-button expand="block" (click)="answer()" color="success"> confirm </ion-button>

@@ -3,45 +3,51 @@
         {
             "questionText": "What is the purpose of $LZT?",
             "option1": "Utility",
-            "answer": "A store of value",
             "option2": "Gambling",
-            "option3": "Meme coin"
+            "option3": "Meme coin",
+            "option4": "A store of Value",
+            "answer": "A store of value"
         },
         {
             "questionText": "What is the purpose of $LAZA?",
-            "answer": "Utility",
             "option1": "A store of value",
-            "option3": "Gambling",
-            "option2": "Meme coin"
+            "option3": "Utility",
+            "option2": "Meme coin",
+            "option4": "Gambling",
+            "answer": "Utility"
         },
         {
             "questionText": "What is the planned total circulation of $LZT?",
             "option1": "1000",
-            "answer": "100 Million",
-            "option2": "Every holder is issued 1 token",
-            "option3": "Every holder is issued with 5 tokens"
+            "option2": "100 Million",
+            "option3": "Every holder is issued 1 token",
+            "option4": "Every holder is issued with 5 tokens",
+            "answer": "100 Million"
             
         },
         {
             "questionText": "What is the native (base) currency of the XRPL?",
-            "answer": "$XRP",
-            "option1": "$LZT",
-            "option2": "$LAZA",
-            "option3": "$XRPL"
+            "option1": "$XRP",
+            "option2": "$LZT",
+            "option3": "$LAZA",
+            "option4": "$XRPL",
+            "answer": "$XRP"
         },
         {
             "questionText": "Which of these blockchains are the cheapest/fastest?",
             "option1": "BNC",
             "option2": "ETH",
             "option3": "BTC",
+            "option4": "XRPL",
             "answer": "XRPL"
         },
         {
             "questionText": "Why did Lazatech choose to make the XRPL it’s home",
             "option1": "Because Jed McCaleb called us up and was very insistent",
-            "answer": "Because of the low costs of transactions, speed, and efficiency",
-            "option2": "Because other blockchains aren't accepting any new project launches",
-            "option3": "All of the above"
+            "option2": "Because of the high costs of transactions, speed, and efficiency",
+            "option3": "Because of the low costs of transactions, speed, and efficiency",
+            "option4": "Because other blockchains aren't accepting any new project launches",
+            "answer": "Because of the low costs of transactions, speed, and efficiency"
             
         },
         {
@@ -49,28 +55,32 @@
             "option1": "Help",
             "option2": "Cryptocurrency",
             "option3": "Money",
+            "option4": "God has helped",
             "answer": "God has helped"
         },
         {
             "questionText": "Does Lazatech Soc Med gives token to its users?",
-            "answer": "Yes",
+            "option1": "Yes",
             "option2": "No",
             "option3": "Sometimes",
-            "option1": "Yes but you need to pay"
+            "option4": "Yes but you need to pay",
+            "answer": "Yes"
         },
         {
             "questionText": "Does Lazatech Educate give you knowledge of the social media counterpart of it?",
             "option1": "Not at all",
             "option2": "A little",
             "option3": "Yes but not enough",
+            "option4": "Yes",
             "answer": "Yes"
         },
         {
             "questionText": "Does Lazatech Educate ensure that its its are knowledgeable before entering its social media counterpart and the XRPL ledger blockchain?",
-            "answer": "Yes",
+            "option1": "Yes",
             "option2": "Yes but not enough",
             "option3": "Not at all",
-            "option1": "A little"
+            "option4": "A little",
+            "answer": "Yes"
         }
     ]
     

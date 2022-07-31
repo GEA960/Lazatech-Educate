@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-title>Quizzes</ion-title>
 
-    <ion-buttons slot="start">
+    <ion-buttons slot="start" *ngIf="!show">
       <ion-menu-button autoHide="false"></ion-menu-button>
     </ion-buttons>
 
@@ -21,12 +21,7 @@
   </ion-card>
 
   <ion-card>
-    <!-- <ion-card-header>
-      <ion-card-title>Question {{i+1}}: {{item.questionText}}</ion-card-title>
-    </ion-card-header>
-   -->
     <ion-card-content>
-      <!-- *ngFor="let item of qstn; let i = index;" -->
       <ion-button *ngIf="!show" (click)="answer()" color="success">Take Quiz</ion-button>
       <ion-list *ngIf="show">
           <ion-radio-group [(ngModel)]="qAnswer" >

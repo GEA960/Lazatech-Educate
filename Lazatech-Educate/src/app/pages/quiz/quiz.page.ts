@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-quiz',
@@ -21,8 +22,9 @@ export class QuizPage implements OnInit {
   token: number;
 
   index: number = 0;
+  items: number;
 
-  constructor(private afs: AngularFirestore, private auth: AuthService) { }
+  constructor(private afs: AngularFirestore, private auth: AuthService, private alertCtrl: AlertController) { }
 
   ngOnInit() {
     this.auth.user$.subscribe(user => {
@@ -41,20 +43,38 @@ export class QuizPage implements OnInit {
 
   answer(){
     this.show = true;
-    
-    if (this.qAnswer == null){
-      console.log('No answer')
+    this.items = this.qstn.length;
+    if(this.index <= this.items - 1){
+      if (this.qAnswer == null){
+
+      }
+      else if(this.qAnswer == this.qstn[this.index].answer){
+        this.afs.collection('user').doc(this.userId).set({
+          'userName': this.name,
+          'userEmail': this.email,
+          'userToken': this.token + 1
+        },{merge: true});
+        this.alert('Congratulations', 'You earned a token');
+        return this.index += 1;
+      }
+      else if(this.qAnswer != this.qstn[this.index].answer){
+        this.alert('Sorry You got the wrong answer', `Correct answer is: ${this.qstn[this.index].answer}`);
+        return this.index += 1;
+      }
     }
-    else if(this.qAnswer == this.qstn[this.index].answer){
-      console.log('user answer: ', this.qAnswer);
-      console.log('correct answer: ', this.qstn[this.index].answer)
-      return this.index += 1;
-    }
-    else if(this.qAnswer != this.qstn[this.index].answer){
-      console.log('user answer: ', this.qAnswer);
-      console.log('correct answer: ', this.qstn[this.index].answer)
-      return this.index += 1;
+    // Still working on this
+    else if(this.index > this.items - 1){
+      console.log('ubos na tanong')
     }
   }
 
+
+  async alert(header, message){
+    const alert = await this.alertCtrl.create({
+      header: header,
+      message: message,
+      buttons: ['Ok']
+    });
+    await alert.present();
+  }
 }

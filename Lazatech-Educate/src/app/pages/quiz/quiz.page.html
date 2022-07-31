@@ -23,34 +23,36 @@
     </ion-card-header>
    -->
     <ion-card-content>
-      <ion-list>
-        <ion-radio-group *ngFor="let item of question; let i = index;">
-          <ion-list-header>
-            <ion-label>Question {{i+1}}: {{item.questionText}}</ion-label>
-          </ion-list-header>
+      <!-- *ngFor="let item of qstn; let i = index;" -->
+      <ion-button *ngIf="!show" (click)="take()" color="success">Take Quiz</ion-button>
+      <ion-list *ngIf="show">
+          <ion-radio-group [(ngModel)]="qAnswer" >
+            <ion-list-header>
+              <ion-label>Question: {{questions.questionText}}</ion-label>
+            </ion-list-header>
 
-          <ion-item>
-            <ion-label>{{item.option1}}</ion-label>
-            <ion-radio slot="start" [value]="item.option1"></ion-radio>
-          </ion-item>
-      
-          <ion-item>
-            <ion-label>{{item.answer}}</ion-label>
-            <ion-radio slot="start" [value]="item.answer"></ion-radio>
-          </ion-item>
-      
-          <ion-item>
-            <ion-label>{{item.option2}}</ion-label>
-            <ion-radio slot="start" [value]="item.option2"></ion-radio>
-          </ion-item>
+            <ion-item>
+              <ion-label>{{questions.option1}}</ion-label>
+              <ion-radio slot="start" [value]="questions.option1"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>{{questions.answer}}</ion-label>
+              <ion-radio slot="start" [value]="questions.answer"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>{{questions.option2}}</ion-label>
+              <ion-radio slot="start" [value]="questions.option2"></ion-radio>
+            </ion-item>
 
-          <ion-item>
-            <ion-label>{{item.option3}}</ion-label>
-            <ion-radio slot="start" [value]="item.option3"></ion-radio>
-          </ion-item>
+            <ion-item>
+              <ion-label>{{questions.option3}}</ion-label>
+              <ion-radio slot="start" [value]="questions.option3"></ion-radio>
+            </ion-item>
 
-          <ion-button expand="block" (click)="answer()" color="success"> confirm </ion-button>
-        </ion-radio-group>
+            <ion-button expand="block" (click)="answer()" color="success"> confirm </ion-button>
+          </ion-radio-group>
       </ion-list>
     </ion-card-content>
   </ion-card>

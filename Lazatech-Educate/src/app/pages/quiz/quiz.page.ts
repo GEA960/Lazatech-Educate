@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { IonItem } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-quiz',
@@ -9,21 +8,35 @@ import { IonItem } from '@ionic/angular';
 })
 export class QuizPage implements OnInit {
 
-  question: any;
+  qstn: any;
+  questions: any;
   qAnswer: any;
+  index: number = 0;
+  show: boolean;
 
-  constructor(private http: HttpClient) { }
+  constructor() { }
 
   ngOnInit() {
     fetch('./assets/data/questions.json').then(res => res.json())
     .then(json => {
-      return this.question = json['C1L1questions'];
+      this.qstn = json['C1L1questions'];
     });
+  }
 
+  take(){
+    this.show = true;
+    this.answer();
   }
 
   answer(){
-    console.log('Selected Value:', this.qAnswer)
+    this.questions = this.qstn[this.index];
+    if (this.qAnswer == null){
+      console.log('No answer')
+    }
+    else{
+      console.log('Selected Value:', this.qAnswer)
+      return this.index = this.index + 1
+    }
   }
 
 }

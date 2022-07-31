@@ -21,10 +21,7 @@
             "option2": "Every holder is issued 1 token",
             "option3": "Every holder is issued with 5 tokens"
             
-        }
-    ],
-
-    "C1L2questions": [
+        },
         {
             "questionText": "What is the native (base) currency of the XRPL?",
             "answer": "$XRP",
@@ -46,10 +43,7 @@
             "option2": "Because other blockchains aren't accepting any new project launches",
             "option3": "All of the above"
             
-        }
-    ],
-
-    "C1L3questions": [
+        },
         {
             "questionText": "What does LAZA means?",
             "option1": "Help",
@@ -63,10 +57,7 @@
             "option2": "No",
             "option3": "Sometimes",
             "option1": "Yes but you need to pay"
-        }
-    ],
-
-    "C1L5questions": [
+        },
         {
             "questionText": "Does Lazatech Educate give you knowledge of the social media counterpart of it?",
             "option1": "Not at all",
@@ -82,4 +73,5 @@
             "option1": "A little"
         }
     ]
+    
 }

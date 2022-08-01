@@ -15,7 +15,7 @@ This project will consists of lessons and quizzes after them. Once a user answer
 Note that your device should have node.js and angular installed globally. If you do have installed them, move on with the instruction below:
 
 1. Clone the repository
-2. open your terminal
+2. open your terminal in vs code
 3. cd to the project
 4. run 'npm install' command in order to create node_modules
 5. run "npm install firebase"

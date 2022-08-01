@@ -23,6 +23,15 @@ section.course-content {
     background-color: #b3ffb0;
 }
 
+section.course-content:hover {
+    color: white;
+    background-color:#409c5c;
+
+    a[href]{
+        color:#b3ffb0;
+    }
+}
+
 h3 {
     font-weight: bolder;
 }

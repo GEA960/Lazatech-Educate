@@ -3,8 +3,30 @@ ion-content {
     --padding-end: 10px;
     --padding-top: 20px;
     --padding-bottom: 20px;
+    --display: flex;
+}
+
+div.elementor-widget-container {
+    background-color: #6effa1;
+    padding: 5px;
+    padding-left: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+div.description {
+    font-size: 20px;
+}
+
+section.course-content {
+    padding: 10px;
+    background-color: #b3ffb0;
+}
+
+h3 {
+    font-weight: bolder;
 }
 
 a[href] {
-    color: slateblue;
+    color: #03a652;
 }

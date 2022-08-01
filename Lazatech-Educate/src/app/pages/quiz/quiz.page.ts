@@ -23,6 +23,7 @@ export class QuizPage implements OnInit {
 
   index: number = 0;
   items: number;
+  score: number = 0;
 
   constructor(private afs: AngularFirestore, private auth: AuthService, private alertCtrl: AlertController) { }
 
@@ -44,7 +45,7 @@ export class QuizPage implements OnInit {
   answer(){
     this.show = true;
     this.items = this.qstn.length;
-    if(this.index < this.items){
+    if(this.index < this.items - 1){
       if (this.qAnswer == null){
 
       }
@@ -55,23 +56,22 @@ export class QuizPage implements OnInit {
           'userToken': this.token + 1
         },{merge: true});
         this.alert('Congratulations', 'You earned a token');
-        this.qAnswer = "";
-        return this.index += 1;
+        this.qAnswer = null;
+        this.index += 1;
+        return this.score += 1;
       }
       else if(this.qAnswer != this.qstn[this.index].answer){
         this.alert('Sorry You got the wrong answer', `Correct answer is: ${this.qstn[this.index].answer}`);
-        this.qAnswer = "";
-        return this.index += 1;
+        this.qAnswer = null;
+        this.index += 1;
       }
     }
-    // Still working on this
-    else if(this.index = this.items - 1){
-      console.log('ubos na tanong')
+    
+    else if(this.index >= this.items - 1){
+      this.show = false;
+      this.alert('Congratulations', `You earned ${this.score} out of ${this.items - 1} tokens`)
     }
-    // and this also
-    else{
-      console.log('ewan')
-    }
+
   }
 
 

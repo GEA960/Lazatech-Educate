@@ -52,10 +52,9 @@
         },
         {
             "questionText": "What does LAZA means?",
-            "option1": "Help",
-            "option2": "Cryptocurrency",
-            "option3": "Money",
-            "option4": "God has helped",
+            "option1": "Cryptocurrency",
+            "option2": "Money",
+            "option3": "God has helped",
             "answer": "God has helped"
         },
         {
@@ -63,23 +62,23 @@
             "option1": "Yes",
             "option2": "No",
             "option3": "Sometimes",
-            "option4": "Yes but you need to pay",
             "answer": "Yes"
         },
         {
             "questionText": "Does Lazatech Educate give you knowledge of the social media counterpart of it?",
-            "option1": "Not at all",
-            "option2": "A little",
-            "option3": "Yes but not enough",
-            "option4": "Yes",
+            "option2": "No",
+            "option1": "Yes",
             "answer": "Yes"
         },
         {
             "questionText": "Does Lazatech Educate ensure that its its are knowledgeable before entering its social media counterpart and the XRPL ledger blockchain?",
             "option1": "Yes",
-            "option2": "Yes but not enough",
-            "option3": "Not at all",
-            "option4": "A little",
+            "option2": "No",
+            "answer": "Yes"
+        },
+        {
+            "questionText": "Press next to finish the quiz",
+            "option1": "Yes",
             "answer": "Yes"
         }
     ]

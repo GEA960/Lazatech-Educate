@@ -29,27 +29,27 @@
               <ion-label>Question: {{index + 1}} {{qstn[index].questionText}}</ion-label>
             </ion-list-header>
 
-            <ion-item>
+            <ion-item *ngIf="qstn[index].option1">
               <ion-label>{{qstn[index].option1}}</ion-label>
               <ion-radio slot="start" [value]="qstn[index].option1"></ion-radio>
             </ion-item>
         
-            <ion-item>
+            <ion-item *ngIf="qstn[index].option2">
               <ion-label>{{qstn[index].option2}}</ion-label>
               <ion-radio slot="start" [value]="qstn[index].option2"></ion-radio>
             </ion-item>
         
-            <ion-item>
+            <ion-item *ngIf="qstn[index].option3">
               <ion-label>{{qstn[index].option3}}</ion-label>
               <ion-radio slot="start" [value]="qstn[index].option3"></ion-radio>
             </ion-item>
 
-            <ion-item>
+            <ion-item *ngIf="qstn[index].option4">
               <ion-label>{{qstn[index].option4}}</ion-label>
               <ion-radio slot="start" [value]="qstn[index].option4"></ion-radio>
             </ion-item>
 
-            <ion-button expand="block" (click)="answer()" color="success"> confirm </ion-button>
+            <ion-button expand="block" (click)="answer()" color="success"> Next </ion-button>
           </ion-radio-group>
       </ion-list>
     </ion-card-content>

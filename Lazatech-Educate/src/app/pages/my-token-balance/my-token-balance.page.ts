@@ -30,12 +30,12 @@ export class MyTokenBalancePage implements OnInit {
   }
 
   // for testing purposes only
-  add(){
-    this.afs.collection('user').doc(this.userId).set({
-      'userName': this.name,
-      'userEmail': this.email,
-      'userToken': this.token + 1
-    },{merge: true});
-  }
+  // add(){
+  //   this.afs.collection('user').doc(this.userId).set({
+  //     'userName': this.name,
+  //     'userEmail': this.email,
+  //     'userToken': this.token + 1
+  //   },{merge: true});
+  // }
 
 }

@@ -44,7 +44,7 @@ export class QuizPage implements OnInit {
   answer(){
     this.show = true;
     this.items = this.qstn.length;
-    if(this.index <= this.items - 1){
+    if(this.index < this.items){
       if (this.qAnswer == null){
 
       }
@@ -55,16 +55,22 @@ export class QuizPage implements OnInit {
           'userToken': this.token + 1
         },{merge: true});
         this.alert('Congratulations', 'You earned a token');
+        this.qAnswer = "";
         return this.index += 1;
       }
       else if(this.qAnswer != this.qstn[this.index].answer){
         this.alert('Sorry You got the wrong answer', `Correct answer is: ${this.qstn[this.index].answer}`);
+        this.qAnswer = "";
         return this.index += 1;
       }
     }
     // Still working on this
-    else if(this.index > this.items - 1){
+    else if(this.index = this.items - 1){
       console.log('ubos na tanong')
+    }
+    // and this also
+    else{
+      console.log('ewan')
     }
   }
 

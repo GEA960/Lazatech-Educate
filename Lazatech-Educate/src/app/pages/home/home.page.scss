@@ -118,7 +118,9 @@ ion-menu ion-content {
     --color: var(--ion-color-primary);
   }
 
-
+  #scroll-list{
+    height: 200px;
+  }
       ion-content.background{
-        --background: url(../../../assets/LazatechEducateHomepage.png) no-repeat center center / cover;
+        --background: url(../../../assets/Lazatech Educate Homepage.png) no-repeat center/cover fixed; background-size: 100%;
     }

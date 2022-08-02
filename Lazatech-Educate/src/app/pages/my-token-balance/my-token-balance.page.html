@@ -14,17 +14,17 @@
     <ion-card>
       <ion-card-content>
         <ion-item lines="none">
-          <ion-card-title class="title">This Token can be used for purchasing different products from us</ion-card-title>
+          <p>Tokens can be used for purchasing different products from us.</p>
         </ion-item>
 
         <ion-item>
           <ion-icon name="person-circle-outline" slot="start" size="large"></ion-icon>
-          <ion-card-title>{{user?.userName}}</ion-card-title>
+          <ion-card-subtitle>{{user?.userName}}</ion-card-subtitle>
         </ion-item>
 
         <ion-item>
           <ion-icon name="wallet-outline" slot="start" size="large"></ion-icon>
-          <ion-card-title>Token Balance: {{user?.userToken}}.00</ion-card-title>
+          <ion-card-subtitle>Token Balance: {{user?.userToken}}.00</ion-card-subtitle>
         </ion-item>
 
         <!-- for testing purposes only -->

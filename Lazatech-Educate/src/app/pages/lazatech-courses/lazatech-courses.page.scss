@@ -26,14 +26,13 @@ section.course-content {
     background-color: rgb(3, 69, 145);
 }
 
-section.course-content:hover {
+/*section.course-content:hover {
     color: white;
     background-color:#236fb6;
-    box-shadow: 8px 8px 2px #153c83;
     a[href]{
         color:#bbf8e9;
     }
-}
+}*/
 
 span {
     margin: 6px;
@@ -41,6 +40,7 @@ span {
 
 h3 {
     font-weight: bolder;
+    font-size: 28px;
 }
 
 a[href] {

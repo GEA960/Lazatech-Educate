@@ -14,10 +14,12 @@ export class LazatechCoursesPage implements OnInit {
   constructor( private router: Router,
     private auth: AuthService,
     private toastr: ToastController) { }
+    
+    go(){
+      this.router.navigate(['/course1'])
+    }
 
   ngOnInit() {
   }
-  go(){
-    this.router.navigate(['course1'])
-  }
+  
 }

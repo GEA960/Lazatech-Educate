@@ -1,0 +1,31 @@
+ion-toolbar {
+    color: white;
+    --ion-background-color: rgb(49, 71, 199);
+}
+
+ion-icon {
+    color: white;
+}
+
+ion-content {
+    --padding-start: 50px;
+    --padding-end: 20px;
+    --padding-top: 20px;
+    --padding-bottom: 20px;
+}
+
+div.course_head {
+    h1 {
+        font-weight: bolder;
+        color: #152983;
+    }
+
+    p {
+        background-color: #152983;
+        color: rgb(180, 251, 253);
+        padding: 10px;
+        padding-left: 10px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+}

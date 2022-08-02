@@ -20,6 +20,8 @@ export class QuizPage implements OnInit {
   name: string;
   email: string;
   token: number;
+  course1: boolean;
+  course1Score: number = 0;
 
   index: number = 0;
   items: number;
@@ -34,6 +36,8 @@ export class QuizPage implements OnInit {
       this.name = user.userName;
       this.email = user.userEmail;
       this.token = user.userToken;
+      this.course1 = user.userCourse1;
+      this.course1Score = user.userCourse1Score;
     }),
 
     fetch('./assets/data/questions.json').then(res => res.json())
@@ -43,33 +47,46 @@ export class QuizPage implements OnInit {
   }
 
   answer(){
-    this.show = true;
-    this.items = this.qstn.length;
-    if(this.index < this.items - 1){
-      if (this.qAnswer == null){
+    if (this.course1 == false){
+      this.show = true;
+      this.items = this.qstn.length;
+      if(this.index < this.items - 1){
+        if (this.qAnswer == null){
 
+        }
+        else if(this.qAnswer == this.qstn[this.index].answer){
+          this.afs.collection('user').doc(this.userId).set({
+            'userName': this.name,
+            'userEmail': this.email,
+            'userToken': this.token + 1,
+            'userCourse1Score': this.course1Score + 1
+          },{merge: true});
+          this.alert('Congratulations', 'You earned a token');
+          this.qAnswer = null;
+          this.index += 1;
+          return this.score += 1;
+        }
+        else if(this.qAnswer != this.qstn[this.index].answer){
+          this.alert('Sorry You got the wrong answer', `Correct answer is: ${this.qstn[this.index].answer}`);
+          this.qAnswer = null;
+          this.index += 1;
+        }
       }
-      else if(this.qAnswer == this.qstn[this.index].answer){
+      
+      else if(this.index >= this.items - 1){
+        this.show = false;
+        this.alert('Congratulations', `You earned ${this.score} out of ${this.items - 1} tokens`)
         this.afs.collection('user').doc(this.userId).set({
           'userName': this.name,
           'userEmail': this.email,
-          'userToken': this.token + 1
+          'userToken': this.token,
+          'userCourse1Score': this.course1Score,
+          'userCourse1': this.course1 = true
         },{merge: true});
-        this.alert('Congratulations', 'You earned a token');
-        this.qAnswer = null;
-        this.index += 1;
-        return this.score += 1;
-      }
-      else if(this.qAnswer != this.qstn[this.index].answer){
-        this.alert('Sorry You got the wrong answer', `Correct answer is: ${this.qstn[this.index].answer}`);
-        this.qAnswer = null;
-        this.index += 1;
       }
     }
-    
-    else if(this.index >= this.items - 1){
-      this.show = false;
-      this.alert('Congratulations', `You earned ${this.score} out of ${this.items - 1} tokens`)
+    else if(this.course1 == true){
+      this.alert('You have already taken the course quiz', `You scored ${this.course1Score} points`)
     }
   }
 

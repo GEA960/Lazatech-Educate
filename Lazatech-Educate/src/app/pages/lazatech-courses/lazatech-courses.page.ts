@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AlertController, ToastController } from '@ionic/angular';
+import { AlertController } from '@ionic/angular';
 import { AuthService } from 'src/app/services/auth.service';
 
 
@@ -15,7 +15,6 @@ export class LazatechCoursesPage implements OnInit {
 
   constructor( private router: Router,
     private auth: AuthService,
-    private toastr: ToastController,
     private alertCtrl: AlertController) { }
 
   ngOnInit() {

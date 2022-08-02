@@ -20,6 +20,8 @@ export class RegisterPage implements OnInit {
   email: string;
   password: string;
   token: number = 1;
+  course1: boolean = false;
+  course1Score: number = 0;
 
   constructor
   (
@@ -52,7 +54,9 @@ export class RegisterPage implements OnInit {
           'userId': data.user.uid,
           'userName': this.name,
           'userEmail': this.email,
-          'userToken': this.token
+          'userToken': this.token,
+          'userCourse1': this.course1,
+          'userCourse1Score': this.course1Score
         })
         .then(()=>{
           loading.dismiss();

@@ -9,7 +9,7 @@ ion-icon {
 
 ion-content {
     --padding-start: 50px;
-    --padding-end: 20px;
+    --padding-end: 30px;
     --padding-top: 20px;
     --padding-bottom: 20px;
 }
@@ -21,11 +21,44 @@ div.course_head {
     }
 
     p {
+        text-align: justify;
         background-color: #152983;
         color: rgb(180, 251, 253);
         padding: 10px;
         padding-left: 10px;
         border-radius: 10px;
         font-size: 18px;
+    }
+}
+
+div.lesson_head {
+    h2 {
+        font-weight: bold;
+        color: #152983;
+    }
+
+    p {
+        line-height: 1.5;
+        text-align: justify;
+        font-size: 17px;
+    }
+}
+
+div.lesson_content {
+    text-align: justify;
+    line-height: 1.5;
+
+    h3 {
+        font-weight: bold;
+        color: #0f5aaf;
+    }
+
+    b {
+        color: #0f5aaf;  
+        font-size: 22px; 
+    }
+
+    b.bullet {
+        font-size: 16px;
     }
 }

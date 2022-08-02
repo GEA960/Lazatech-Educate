@@ -48,7 +48,11 @@ const routes: Routes = [
   {
     path: '**',
     loadChildren: () => import('./pages/page-not-found/page-not-found.module').then( m => m.PageNotFoundPageModule)
+  },  {
+    path: 'course1',
+    loadChildren: () => import('./pages/course1/course1.module').then( m => m.Course1PageModule)
   }
+
 ];
 
 @NgModule({

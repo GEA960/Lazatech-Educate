@@ -71,7 +71,6 @@ export class QuizPage implements OnInit {
       this.show = false;
       this.alert('Congratulations', `You earned ${this.score} out of ${this.items - 1} tokens`)
     }
-
   }
 
 

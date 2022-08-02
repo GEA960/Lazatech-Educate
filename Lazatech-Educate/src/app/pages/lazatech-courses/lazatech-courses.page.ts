@@ -19,6 +19,15 @@ export class LazatechCoursesPage implements OnInit {
       this.router.navigate(['/course1'])
     }
 
+    // go(id){
+    //   if (id == true){
+    //     this.router.navigate(['/course1'])
+    //   }
+    //   else if (id == false){
+    //     this.alert('Alert', 'This course is currently unavailable')
+    //   }
+    // }
+
   ngOnInit() {
   }
   

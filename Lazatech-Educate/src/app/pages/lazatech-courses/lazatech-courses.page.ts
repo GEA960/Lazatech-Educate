@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ToastController } from '@ionic/angular';
+import { AuthService } from 'src/app/services/auth.service';
+
 
 @Component({
   selector: 'app-lazatech-courses',
@@ -7,9 +11,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LazatechCoursesPage implements OnInit {
 
-  constructor() { }
+  constructor( private router: Router,
+    private auth: AuthService,
+    private toastr: ToastController) { }
 
   ngOnInit() {
   }
-
+  go(){
+    this.router.navigate(['course1'])
+  }
 }

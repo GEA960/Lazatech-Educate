@@ -7,7 +7,8 @@ ion-content {
 }
 
 div.elementor-widget-container {
-    background-color: #15833b;
+    background-color: #152983;
+    color: rgb(180, 251, 253);
     padding: 5px;
     padding-left: 50px;
     border-radius: 10px;
@@ -21,15 +22,16 @@ div.description {
 section.course-content {
     padding: 10px;
     padding-left: 20px;
-    background-color: #1d6b1b;
+    color: white;
+    background-color: rgb(3, 69, 145);
 }
 
 section.course-content:hover {
     color: white;
-    background-color:#409c5c;
-
+    background-color:#236fb6;
+    box-shadow: 8px 8px 2px #153c83;
     a[href]{
-        color:#b3ffb0;
+        color:#bbf8e9;
     }
 }
 
@@ -42,5 +44,5 @@ h3 {
 }
 
 a[href] {
-    color: #03a652;
+    color: #2dffe3;
 }

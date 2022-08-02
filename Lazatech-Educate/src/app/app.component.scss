@@ -3,7 +3,11 @@ ion-menu ion-content {
 }
 
 ion-menu ion-toolbar {
-  --background: rgb(49, 255, 152);
+  --background: rgb(49, 71, 199);
+}
+
+ion-menu ion-title {
+  --color: white;
 }
 
 ion-menu.md ion-content {
@@ -50,7 +54,7 @@ ion-menu.md ion-item {
 }
 
 ion-menu.md ion-item.selected {
-  --background: rgb(3, 145, 76);
+  --background: rgb(3, 36, 145);
 }
 
 ion-menu.md ion-item.selected ion-icon {
@@ -58,7 +62,7 @@ ion-menu.md ion-item.selected ion-icon {
 }
 
 ion-menu.md ion-item ion-icon {
-  color: rgb(4, 167, 86);
+  color: rgb(4, 162, 167);
 }
 
 ion-menu.md ion-item ion-label {
@@ -115,5 +119,5 @@ ion-note {
 }
 
 ion-item.selected {
-  --color: var(--ion-color-primary);
+  --color: rgb(209, 253, 255);
 }

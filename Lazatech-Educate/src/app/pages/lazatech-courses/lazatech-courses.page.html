@@ -12,7 +12,7 @@
 <ion-content>
 
   <div class="description">
-    <p>Welcome to the Lazatech Educate website. All of the available courses are mentioned here. You are free to enroll in any course you like. You are also free to select the lessons you desire to complete. You may learn at your own speed, and you can track your progress and earnings using the navigation bar above.</p>						</div>
+    <p>Welcome to the Lazatech Educate website. All of the available courses are mentioned here. You are free to enroll in any course you like. You are also free to select the lessons you desire to complete. You may learn at your own speed, and you can track your progress and earnings using the navigation bar above.</p></div>
 
 
 <div class="elementor-widget-container">
@@ -29,7 +29,7 @@
 
   Complete this course if you want to get the most out of Lazatech Educate and our ecosystem, since it covers the project as a whole as well as the suite of utilities we are introducing to the XRPL.
 </p>
-<ion-button (click)="go()"> Take this course </ion-button>
+<ion-button (click)="go(id = true)"> Take this course </ion-button>
 </section>
 </section>
 
@@ -45,7 +45,8 @@
   This Know how to Burn course gives an insight into burning on the blockchain. What it is, its characteristics and benefits.
   Please Note: This course’s lessons are Learn to BURN lessons. Meaning that by completing the quiz for each lesson in this course you will be contributing to a reduction in the supply of $LZT but as a result you will not receive $LZT for this lesson.
   </p>
-<p></p>
+
+<ion-button (click)="go(id = false)"> Take this course </ion-button>
 
 </section> <!-- section .entry -->
 </section> <!-- section .course-content -->
@@ -61,6 +62,9 @@
 
   DYOR is a popular practice for many. But worry not if you are fresh to the game and eager to fund some promising-looking XRPL startups. Before putting your money where your mouth is, this course will guide you through a 10-point checklist to ensure you've covered all the bases. Otherwise, you will always be putting your money where their mouth is, and it will likely end up in their pocket, not yours.
 </p>
+
+<ion-button (click)="go(id = false)"> Take this course </ion-button>
+
 </section> <!-- section .entry -->
 </section> <!-- section .course-content -->
 
@@ -79,6 +83,8 @@
   
 </p>
 
+<ion-button (click)="go(id = false)"> Take this course </ion-button>
+
 </section> <!-- section .entry -->
 </section> <!-- section .course-content -->
 
@@ -94,6 +100,7 @@
   If you are unfamiliar with Non Fungible Tokens (NFTs), then perhaps this course will equip you with the necessary knowledge to get started.
 </p>
 
+<ion-button (click)="go(id = false)"> Take this course </ion-button>
 
 </section> <!-- section .entry -->
 </section> <!-- section .course-content -->
@@ -111,6 +118,8 @@
   This session provides a comprehensive introduction to the XRPL, XRP, and blockchain technology.
   
 </p>
+
+<ion-button (click)="go(id = false)"> Take this course </ion-button>
 
 </section> <!-- section .entry -->
 </section> <!-- section .course-content -->

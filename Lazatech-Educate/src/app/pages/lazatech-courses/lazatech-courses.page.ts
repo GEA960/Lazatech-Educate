@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ToastController } from '@ionic/angular';
+import { AlertController, ToastController } from '@ionic/angular';
 import { AuthService } from 'src/app/services/auth.service';
 
 
@@ -11,24 +11,31 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class LazatechCoursesPage implements OnInit {
 
+  id: boolean;
+
   constructor( private router: Router,
     private auth: AuthService,
-    private toastr: ToastController) { }
-    
-    go(){
-      this.router.navigate(['/course1'])
-    }
-
-    // go(id){
-    //   if (id == true){
-    //     this.router.navigate(['/course1'])
-    //   }
-    //   else if (id == false){
-    //     this.alert('Alert', 'This course is currently unavailable')
-    //   }
-    // }
+    private toastr: ToastController,
+    private alertCtrl: AlertController) { }
 
   ngOnInit() {
   }
-  
+
+  go(id){
+    if (id == true){
+      this.router.navigate(['/course1'])
+    }
+    else if (id == false){
+      this.alert('Alert', 'This course is currently unavailable')
+    }
+  }
+
+  async alert(header, message){
+    const alert = await this.alertCtrl.create({
+      header: header,
+      message: message,
+      buttons: ['Ok']
+    });
+    await alert.present();
+  }
 }

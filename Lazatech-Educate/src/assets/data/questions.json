@@ -77,7 +77,7 @@
             "answer": "Yes"
         },
         {
-            "questionText": "Press next to finish the quiz",
+            "questionText": "Choose yes to finish the quiz",
             "option1": "Yes",
             "answer": "Yes"
         }

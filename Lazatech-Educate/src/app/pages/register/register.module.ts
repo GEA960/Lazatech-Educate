@@ -5,6 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { RegisterPageRoutingModule } from './register-routing.module';
 import { RegisterPage } from './register.page';
 import { ComponentsModule } from 'src/app/components/components.module';
+import { ErrMessageComponent } from 'src/app/components/err-message/err-message.component';
 
 @NgModule({
   imports: [
@@ -13,8 +14,8 @@ import { ComponentsModule } from 'src/app/components/components.module';
     IonicModule,
     RegisterPageRoutingModule,
     ReactiveFormsModule,
-    ComponentsModule
+    // ComponentsModule
   ],
-  declarations: [RegisterPage]
+  declarations: [RegisterPage, ErrMessageComponent]
 })
 export class RegisterPageModule {}

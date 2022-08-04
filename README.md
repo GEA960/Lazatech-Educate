@@ -40,6 +40,7 @@ The team presents the aforementioned diagrams to show how users interact with th
 
 The user can obtain or receive a token after completing the quizzes is another feature. The user has the option of purchasing an item from the Store to earn money.
 
+
 ## Instructions to run the Project:
 
 Note that your device should have node.js and angular installed globally. If you do have installed them, move on with the instruction below:
@@ -54,3 +55,11 @@ Note that your device should have node.js and angular installed globally. If you
 8. run "npm install rxjs"
 9. then run ionic serve to see if it is working on your browser
 10. After registering for a new account you should check your email for verification sometimes the mail goes to spam
+
+Final Video Presentation:
+
+
+
+```
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/sEuUzb4VneE)
+```

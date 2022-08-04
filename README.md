@@ -61,5 +61,5 @@ Final Video Presentation:
 
 
 ```
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/sEuUzb4VneE)
+[![Watch the video](https://github.com/Gabriel19-00477/Lazatech-Educate/blob/master/image/README/YoutubePresentationPreview.png)](https://youtu.be/sEuUzb4VneE)
 ```

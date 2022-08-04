@@ -22,7 +22,7 @@ Development Model:
 
 The Scrum model implies that projects should evolve over a succession of sprints. In accordance with an agile methodology, sprints are limited to a duration of no more than one month, typically two weeks. Scrum methodology recommends a planning meeting at the beginning of the sprint, during which team members determine how many things they can commit to and then establish a sprint backlog - a list of tasks to be completed during the sprint. Given the time allotted by the professor to complete the project, the scrum model is the optimal choice. Essentially, the fundamental artifact in Scrum development is the product itself. At the conclusion of each Scrum sprint, the Scrum model expects the team to deliver the product or system to a potentially shippable state. Artifacts on the Scrum paradigm are known as states. Product, product backlog, user-stories, sprint burndown chart, sprint backlog, and sprint release burndown chart are included on these artifacts.
 
-## **System Architecture
+## System Architecture
 
 ![1659608563137](image/README/1659608563137.png)
 
@@ -30,7 +30,7 @@ The Scrum model implies that projects should evolve over a succession of sprints
 
 ![1659608612587](image/README/1659608612587.png)
 
- **Sequence Diagram**
+**Sequence Diagram**
 
 The team presents the aforementioned diagrams to show how users interact with the application. It demonstrates that the user can enroll in a course that will teach them about the XRP ledger and provide it to their users; as a result, this precipitation using the Lazatech Educate mobile application includes lessons and courses about the social media application and its integration with cryptocurrencies.
 

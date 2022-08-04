@@ -24,22 +24,17 @@ The Scrum model implies that projects should evolve over a succession of sprints
 
 ## **System Architecture
 
+![1659608563137](image/README/1659608563137.png)
 
-![1659608563137](image/README/1659608563137.png)**
-
-    **Use Case Diagram**
-
+**Use Case Diagram**
 
 ![1659608612587](image/README/1659608612587.png)
 
- **
-    Sequence Diagram**
-
+ **Sequence Diagram**
 
 The team presents the aforementioned diagrams to show how users interact with the application. It demonstrates that the user can enroll in a course that will teach them about the XRP ledger and provide it to their users; as a result, this precipitation using the Lazatech Educate mobile application includes lessons and courses about the social media application and its integration with cryptocurrencies.
 
 The user can obtain or receive a token after completing the quizzes is another feature. The user has the option of purchasing an item from the Store to earn money.
-
 
 ## Instructions to run the Project:
 
@@ -57,7 +52,5 @@ Note that your device should have node.js and angular installed globally. If you
 10. After registering for a new account you should check your email for verification sometimes the mail goes to spam
 
 Final Video Presentation:
-
-
 
 [![Watch the video](https://github.com/Gabriel19-00477/Lazatech-Educate/blob/master/image/README/YoutubePresentationPreview.png)](https://youtu.be/sEuUzb4VneE)
